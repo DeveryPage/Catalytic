@@ -1,0 +1,228 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Devery",
+            "email": "pagedevery@gmail.com"
+        }
+    ],
+    "workouts": [
+        {
+            "id": 1,
+            "name": "Chest Press",
+            "description": "Works entire chest with triceps. Variations can target specified parts of chest.",
+            "video": "https://acewebcontent.azureedge.net/exercise-library/large/19-2.jpg",
+            "image": "https://cdn.shopify.com/s/files/1/0038/0878/8544/articles/FeaturedImage_PulledChestMuscle_2160x.jpg?v=1592870496",
+            "tips": "Keep the weights in a diaganol grip, don't go below bending your arms 90 degrees, and keep shoulder blades pinched in the back.",
+            "muscleGroupId": 1
+        },
+        {
+            "id": 2,
+            "name": "Pec Flye",
+            "description": "Works the entire chest using adduction with variations to target specific parts.",
+            "video": "https://musclemagfitness.com/wp-content/uploads/Lever-Pec-Deck-Fly-Chest.gif",
+            "image": "https://musclemagfitness.com/wp-content/uploads/Lever-Seated-Fly-Chest.jpg",
+            "tips": "Keep chin facing ceiling, arms slightly bent, and chest pushed out.",
+            "muscleGroupId": 1
+        },
+        {
+            "id": 3,
+            "name": "Dip",
+            "description": "Works on triceps and lower chest using body or added weight.",
+            "video": "https://calisthenicwarrior.com/wp-content/uploads/2019/06/dips.gif",
+            "image": "https://www.oldschoollabs.com/wp-content/uploads/2020/08/Dips-Exercise-Benefits2.jpg",
+            "tips": "Keep legs behind, elbows at a 45 degree angle roughly.",
+            "muscleGroupId": 1
+        },
+        {
+            "id": 4,
+            "name": "Push Up",
+            "description": "Works entire chest with triceps using body or added weight. There are a vast variety of variations for specific parts.",
+            "video": "https://www.fititnow.com/wp-content/uploads/2020/03/push-ups.gif",
+            "image": "https://static2.therichestimages.com/wordpress/wp-content/uploads/2019/02/Push-Up.jpg",
+            "tips": "For standard push up, keep elbows in, back flat, arms roughly shoulder width apart, go down to atleast 90 degrees with your elbows.",
+            "muscleGroupId": 1
+        },
+        {
+            "id": 5,
+            "name": "Bench Press",
+            "description": "Works entire chest with triceps using a bar bell and plates. Only a few variations.",
+            "video": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/workouts/2017/10/narrowgripbenchpress-1509458862.gif",
+            "image": "https://tse3.mm.bing.net/th?id=OIP.PzOMsM9mf2l3iBd8dDklUgHaE7&pid=Api&P=0&w=291&h=195",
+            "tips": "keep shoulders back, plant feet firmly into ground, do not flare out elbows, the closer the grip the more triceps are used, do not go past shoulder width.",
+            "muscleGroupId": 1
+        },
+        {
+            "id": 6,
+            "name": "Leg Extention",
+            "description": "Works quadriceps by extending leg using a machine, or cables.",
+            "video": "https://www.technogym.com/wpress/wp-content/uploads/2019/04/leg-extension-gif.gif",
+            "image": "https://www.technogym.com/wpress/wp-content/uploads/2015/06/purestrength_legextension_businessuse_01.jpg",
+            "tips": "If on a machine, make sure to refer to adjustment guide to see proper adjustments. The further apart your legs the more outer quad gets worked and vice versa.",
+            "muscleGroupId": 2
+        },
+        {
+            "id": 7,
+            "name": "Leg Curl",
+            "description": "Works Hamstrings by curling weight on a machie, cables, resistance bands, body weight, or dumbbells",
+            "video": "https://www.technogym.com/wpress/wp-content/uploads/2019/02/Leg-Curl.gif",
+            "image": "https://tse3.mm.bing.net/th?id=OIP.tfZxVWi9fn_7MiKPfx8pQwHaE8&pid=Api&P=0&w=283&h=189",
+            "tips": "If on a machine, make sure to refer to adjustment guide to see proper adjustments. Focus on contraction in hamstrings. ",
+            "muscleGroupId": 2
+        },
+        {
+            "id": 8,
+            "name": "Squat",
+            "description": "Works your quadriceps and glutes by bending down at your knees and pushing your body weight, a bar bell, a risistance band, or a dumbbell back up. Several Variations.",
+            "video": "https://blogcms.gymshark.com/uploads/1571143586-front-squat-demo.gif",
+            "image": "https://cdn-ami-drupal.heartyhosting.com/sites/muscleandfitness.com/files/media/800-barbell-back-squat.jpg",
+            "tips": "Keep feet straight, never do too much weight, keep back straight, go as deep as is confortable but atlast bend knees ast a 90 degree angle, drive through heels. ",
+            "muscleGroupId": 2
+        },
+        {
+            "id": 9,
+            "name": "Leg Press",
+            "description": "Works quadriceps, hips, glutes, and hamstrings by pushing yourself away using a machine",
+            "video": "https://gym-expert.com/wp-content/uploads/2020/10/tenor-1.gif",
+            "image": "https://tse1.mm.bing.net/th?id=OIP._Goo7E2zUi-6jChY4APQfgHaKZ&pid=Api&P=0&w=300&h=300",
+            "tips": "Drive through heels. keep legs close to hip width apart, do not let knees come inwards, keep head back.",
+            "muscleGroupId": 2
+        },
+        {
+            "id": 10,
+            "name": "Hip Abduction",
+            "description": "Works outer hips and glutes by pushing legs apart against bodyweight, risistance bands, or a machine",
+            "video": "https://www.styrkelabbet.se/wp-content/uploads/2020/03/hip-abduction-machine.gif",
+            "image": "https://mobilephysiotherapyclinic.in/wp-content/uploads/2020/08/hip-abduction.jpg",
+            "tips": "If on a machine, make sure to refer to adjustment guide to see proper adjustments. Do not try going to wide with Abduction. Focus on contraction in hips.",
+            "muscleGroupId": 2
+        },
+        {
+            "id": 11,
+            "name": "Hip Adduction",
+            "description": "Works out inner hips/groin and inner thighs by pushing legs together using most commonly6 a machine.",
+            "video": "https://www.strengthlog.com/wp-content/uploads/2020/03/hip-adduction-machine.gif",
+            "image": "https://tse3.mm.bing.net/th?id=OIP.k9l42UkfqjrXrI15_7_2WQHaEK&pid=Api&P=0&w=287&h=162",
+            "tips": "If on a machine, make sure to refer to adjustment guide to see proper adjustments. Male gym goers do not need to go extremely heavy on this exercise due to a higher risk of hernias.",
+            "muscleGroupId": 2
+        },
+        {
+            "id": 12,
+            "name": "Calf Press",
+            "description": "Works calves by pushing heels up with weight",
+            "video": "https://www.styrkelabbet.se/wp-content/uploads/2020/03/calf-raise-standing.gif",
+            "image": "https://www.burnthefatinnercircle.com/members/images/1777b.jpg",
+            "tips": "Keep toes straight, go  onto toes until a full contraction has been reached and then back down. The longer it is held the tighter the contraction for that rep will be.",
+            "muscleGroupId": 2
+        },
+        {
+            "id": 13,
+            "name": "Lat Pull",
+            "description": "Works your lattimus dorsi by pulling down weight on a machine or cables.",
+            "video": "https://64.media.tumblr.com/3fbece419fc1188ea796643ff73cb09d/tumblr_pcdxtfjtyk1xo63tgo2_500.gifv",
+            "image": "https://tse2.mm.bing.net/th?id=OIP.cFc-CoOIhpZ66bTIJ0PlewHaE-&pid=Api&P=0&w=294&h=198",
+            "tips": "Keep grip at most shoulder width apart. Lean back only a small amount.",
+            "muscleGroupId": 1
+        },
+        {
+            "id": 14,
+            "name": "Row",
+            "description": "Works a variety of back muscles depending on the variation by pulling weight towards you using dumbbells, machines, or cables.",
+            "video": "https://i.pinimg.com/originals/1c/7e/29/1c7e293b84e72ee9f7dc68c0e6ce071a.gif",
+            "image": "https://post.healthline.com/wp-content/uploads/2019/04/seated_row-1200x628-facebook.jpg",
+            "tips": "Make sure to pull in as much as comfortable for full muscle contraction.",
+            "muscleGroupId": 1
+        },
+        {
+            "id": 15,
+            "name": "Pull Up",
+            "description": "Works a few areas of your back depending on grip placement by pulling your body weight, added or reduced weight up on an assisted machine, or regular pull up bar.",
+            "video": "https://media2.giphy.com/media/xUPGcD1LxZUkKUMOB2/source.gif",
+            "image": "https://tse1.mm.bing.net/th?id=OIP.hT-3V9F7TMlJ54cutqIn0gHaDt&pid=Api&P=0&w=322&h=162",
+            "tips": "The wider the grip the more the sides of the lats get used.",
+            "muscleGroupId": 1
+        },
+        {
+            "id": 16,
+            "name": "Straight Arm Push Down",
+            "description": "Works your lattimus dorsi but pushing weight on a cable machine down with rigid arms.",
+            "video": "https://goodwordsgoodthoughtsgooddeeds.com/images/cable-push-down-withd-v-bar-exercise-instructions.gif",
+            "image": "https://www.burnthefatinnercircle.com/members/images/1711.jpg",
+            "tips": "Stay bent over with back flat keep elbows bent but only a few degrees and rigid",
+            "muscleGroupId": 1
+        },
+
+        {
+            "id": 17,
+            "name": "Arm Curl",
+            "description": "Works on bicep as a whole by bringing weight up laterally using dumbbells, resistance bands, cables, and more.",
+            "video": "http://assets.menshealth.co.uk/main/assets/bicep-curl.gif?mtime=1429285979",
+            "image": "http://media3.popsugar-assets.com/files/2015/03/10/605/n/1922398/570ff954_bicep-curls-RedRwTY5R.xxxlarge/i/Bicep-Curl.jpg",
+            "tips": "Keep shoulders back, rotate pinky inward to activate more of the bicep. ",
+            "muscleGroupId": 1
+        },
+        {
+            "id": 18,
+            "name": "Hammer Curl",
+            "description": "Works on Brachus muscle in bicep, by bringing weight up with hands horizantaly.",
+            "video": "https://qph.fs.quoracdn.net/main-qimg-1a63e3c4c189f993a9dca1733b3d9f4b",
+            "image": "https://thehust.com/wp-content/uploads/2020/04/Hammer-Curl-Bicep-Exercise-for-Women-home.jpg",
+            "tips": "Keep shoulders back. Bring weight straight up and straight back down.",
+            "muscleGroupId": 1
+        },
+        {
+            "id": 19,
+            "name": "Tricep Extention",
+            "description": "Works long head of tricep by pushing weight up using a machine, weights, risistance bands, or cables.",
+            "video": "https://media.giphy.com/media/RIG20TDxE0xjjpcSza/giphy.gif",
+            "image": "https://tse1.mm.bing.net/th?id=OIP.x4qmCjMGqMmF_dW9UshskwHaE8&pid=Api&P=0&w=290&h=194",
+            "tips": "Keep elbows foreward, do not use momentum to get weight up.",
+            "muscleGroupId": 1
+        },
+        {
+            "id": 20,
+            "name": "Tricep Press",
+            "description": "Works short head of tricep by pushing weight down on a machine, with body weight, or ristance bands.",
+            "video": "https://i.pinimg.com/originals/78/f3/33/78f333241df4d7b5dda46a623671a52c.gif",
+            "image": "https://www.xtr.gr/images/thumbnails/590/560/detailed/21/1180_1125.jpg.jpg",
+            "tips": "If on a machine, make sure to refer to adjustment guide to see proper adjustments. Keep elbows in.",
+            "muscleGroupId": 1
+        },
+        {
+            "id": 21,
+            "name": "Jogging",
+            "description": "Works on cardio. On a tread mill or out in nature, jogging is a good warm up and exercise.",
+            "video": "https://media1.tenor.com/images/cd5126eff8572af57bd33219712337f7/tenor.gif?itemid=7780277",
+            "image": "https://tse1.mm.bing.net/th?id=OIP.2i9MFETzs4dTBKx6BFboQAHaE7&pid=Api&P=0&w=301&h=201",
+            "tips": "Stay at a steady pace and focus on breathing.",
+            "muscleGroupId": 3
+        }
+    ],
+    "muscleGroup": [
+        {
+            "id": 1,
+            "name": "Upper-Body"
+        },
+        {
+            "id": 2,
+            "name": "Lower-Body"
+        },
+        {
+            "id": 1,
+            "name": "Cardio"
+        }
+    ],
+    "workoutPlans": [
+        {
+            "id": 1,
+            "userId": 1,
+            "workoutId": 1,
+            "name": "Built like SuperMan",
+            "days": "Monday",
+            "sets": 4,
+            "reps": 12,
+            "restTime": "one minute"
+            
+        }
+    ]
+}
