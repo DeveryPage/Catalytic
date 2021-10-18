@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import {BrowserRouter} from "react-router-dom"
 import reportWebVitals from './reportWebVitals';
+import {Catalytic} from "./Components/Catalytic.js"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Catalytic />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
