@@ -1,9 +1,13 @@
+/*
+Form : has all properties of workout plan : plan id sets reps etc.
+Need fetch that gets all workouts
+*/
+import { getAllWorkouts } from './Plans/PlanManager';
 import React, { useState} from 'react';
 import { useHistory } from 'react-router-dom';
-import { PlanCard } from './PlanCard';
 import { addPlan } from './PlanManager';
 
-export const NewPlanForm = () => {
+export const WorkoutPlanForm = () => {
     const history = useHistory();
     const currentUser = JSON.parse(sessionStorage.getItem("catalytic_user"))
 
