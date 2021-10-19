@@ -1,1 +1,56 @@
-placeholder
+const remoteURL = "http://localhost:8088"
+
+export const getPlanById = (workoutPlanId) => {
+    return fetch(`${remoteURL}/workoutPlans/${workoutPlanId}`)
+    .then(res => res.json())
+}
+
+
+export const getAllPlans = () => {
+    return fetch(`${remoteURL}/workoutPlans`)
+    .then(res => res.json())
+}
+
+
+export const deletePlan = (id) => {
+    return fetch(`${remoteURL}/workoutPlans/${id}`, {
+        method:"DELETE"
+    }).then(result => result.json())
+}
+
+
+
+export const update = (editedPlan) => {
+    return fetch(`${remoteURL}/workoutPlans/${editedPlan.id}`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(editedPlan)
+    }).then(data => data.json())
+}
+
+export const getAllWorkouts = () => {
+    return fetch(`${remoteURL}/workouts`)
+    .then(res => res.json())
+}
+
+export const addPlandWorkout = (newWorkout) => {
+    return fetch(`${remoteURL}/plandWorkouts`, {
+        method:"POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newWorkout)
+    }).then(response => response.json())
+}
+
+export const addPlan = (newPlan) => {
+    return fetch(`${remoteURL}/workoutPlans`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newPlan)
+    }).then(response => response.json())
+}
