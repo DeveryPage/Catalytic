@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+    background-color: #38B6FF;
+} 
+
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar__item {
+    flex-basis: 20%;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+
+a:visited {
+    color:white;
+}
+a:hover {
+    color: wheat
+}

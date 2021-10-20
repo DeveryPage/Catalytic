@@ -214,12 +214,44 @@
   ],
   "plandWorkouts": [
     {
-      "workoutId": 14,
+      "workoutId": 1,
       "workoutPlanId": 1,
-      "sets": 12,
-      "reps": 12,
-      "restTime": "1",
+      "sets": 4,
+      "reps": 4,
+      "restTime": "1 min",
       "id": 1
+    },
+    {
+      "workoutId": 6,
+      "workoutPlanId": 1,
+      "sets": 4,
+      "reps": 4,
+      "restTime": "8",
+      "id": 2
+    },
+    {
+      "workoutId": 0,
+      "workoutPlanId": 1,
+      "sets": 888888,
+      "reps": 0,
+      "restTime": "",
+      "id": 3
+    },
+    {
+      "workoutId": 1,
+      "workoutPlanId": 3,
+      "sets": 4,
+      "reps": 4,
+      "restTime": "4",
+      "id": 4
+    },
+    {
+      "workoutId": 7,
+      "workoutPlanId": 3,
+      "sets": 5,
+      "reps": 5,
+      "restTime": "5",
+      "id": 5
     }
   ],
   "muscleGroups": [
@@ -239,8 +271,18 @@
   "workoutPlans": [
     {
       "userId": 1,
-      "name": "pop",
+      "name": "Plan",
       "id": 1
+    },
+    {
+      "userId": 1,
+      "name": "Devery 2",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "name": "Devery",
+      "id": 3
     }
   ],
   "days": [
