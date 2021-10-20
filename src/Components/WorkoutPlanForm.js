@@ -17,6 +17,7 @@ export const WorkoutPlanForm = () => {
     const [plandWorkout, setPlandWorkout] = useState({
         workoutId: 0,
         workoutPlanId: 0,
+        sets: 0,
         reps: 0,
         restTime: ""
     })
@@ -32,7 +33,7 @@ export const WorkoutPlanForm = () => {
         getAllWorkouts().then((res) => {
             setWorkouts(res)
         })
-    },[])
+    },[plandWorkout])
 
 
     const handleControlledInputChange = (event) => {
@@ -47,19 +48,41 @@ export const WorkoutPlanForm = () => {
         setPlandWorkout(newWorkout)
     }
 
-    const handleClickSaveWorkout = (event) => {
+    // const handleClickSaveWorkout = (event) => {
+    //     event.preventDefault()
+    //     const myNewPlan = {
+    //         workoutId: plandWorkout.workoutId,
+    //         workoutPlanId: parseInt(workoutPlanId),
+    //         sets: parseInt(plandWorkout.sets),
+    //         reps: parseInt(plandWorkout.reps),
+    //         restTime: plandWorkout.restTime
+    //     }
+    //         addPlandWorkout(myNewPlan)
+    //             .then((res) => history.push(`/plandWorkouts/${res.id}`))
+
+    // }
+
+
+    const handleClickSaveandClear = (event) => {
         event.preventDefault()
-        const myNewPlan = {
+        const myPlan = {
             workoutId: plandWorkout.workoutId,
             workoutPlanId: parseInt(workoutPlanId),
             sets: parseInt(plandWorkout.sets),
             reps: parseInt(plandWorkout.reps),
             restTime: plandWorkout.restTime
         }
-            addPlandWorkout(myNewPlan)
-                .then((res) => history.push(`/plandWorkouts/${res.id}`))
-
+        addPlandWorkout(myPlan)
+            .then(() => setPlandWorkout( {
+                workoutId: 0,
+                workoutPlanId: 0,
+                sets: 0,
+                reps: 0,
+                restTime: ""
+            }))
     }
+
+
     console.log(workouts)
     return (
         <form className="workoutForm">
@@ -71,39 +94,35 @@ export const WorkoutPlanForm = () => {
                         <option value="0" >Please Select A Workout...</option>
                         {workouts.map(workout => <option key={workout.id} value={workout.id}>{workout.name}</option>)}
                     </select>
-                    <select type="select" onChange={handleControlledInputChange} id="workoutId" required autoFocus className="form-control">
-                        <option value="0" >Please Select A Workout...</option>
-                        {workouts.map(workout => <option key={workout.id} value={workout.id}>{workout.name}</option>)}
-                    </select>
-                    <select type="select" onChange={handleControlledInputChange} id="workoutId" required autoFocus className="form-control">
-                        <option value="0" >Please Select A Workout...</option>
-                        {workouts.map(workout => <option key={workout.id} value={workout.id}>{workout.name}</option>)}
-                    </select>
-                    
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="sets">Sets </label>
-                    <input type="select" id="sets" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Sets" value={workouts.sets} />
+                    <input type="select" id="sets" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Sets" value={plandWorkout.sets} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="reps">Reps </label>
-                    <input type="select" id="reps" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Repetitions" value={workouts.reps} />
+                    <input type="select" id="reps" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Repetitions" value={plandWorkout.reps} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="restTime">Rest Time </label>
-                    <input type="select" id="restTime" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Rest Time" value={workouts.restTime} />
+                    <input type="select" id="restTime" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Rest Time" value={plandWorkout.restTime} />
                 </div>
             </fieldset>
             <button 
             className="saveWorkout_btn"
-            onClick={handleClickSaveWorkout}>
+            onClick={handleClickSaveandClear}>
                 Save Workout
+            </button>
+            <button
+            className="addWorkout_btn"
+            onClick={WorkoutPlanForm}>
+                Add Another Workout
             </button>
         </form>
     )

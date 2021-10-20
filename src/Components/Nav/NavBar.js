@@ -12,7 +12,7 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
 
     return (
         <ul className="navbar">
-            <li className="navbar__item">
+            <li id="Home" className="navbar__item">
                 <Link className="navbar__link" to="/"> Home</Link>
             </li>
             {isAuthenticated && <li className="navbar__item">
@@ -21,9 +21,9 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
             {isAuthenticated && <li className="navbar__item">
                     <Link className="navbar__link" to="/tips"> Tips </Link>
                 </li>}
-            {isAuthenticated && <li className="navbar__item">
+            {/* {isAuthenticated && <li className="navbar__item">
                 <Link className="navbar__link" to="/allPlans"> All Plans </Link>
-            </li>}
+            </li>} */}
             {isAuthenticated
                 ? <li className="navbar__item">
                     <span className="navbar__link" onClick={handleLogout}> Logout </span>
