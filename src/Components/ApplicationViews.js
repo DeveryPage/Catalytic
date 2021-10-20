@@ -6,6 +6,7 @@ import { RegisterForm } from "./Auth/RegisterForm"
 import { NewPlanForm } from "./Plans/NewPlanForm"
 import { PlanCard } from "./Plans/PlanCard"
 import { WorkoutPlanList } from "./Plans/PlanList"
+import { WorkoutPlanForm } from "./WorkoutPlanForm"
 
 export const ApplicationViews = ({setAuthUser, isAuthenticated}) => {
     // const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("catalytic_user") !== null)
@@ -22,7 +23,8 @@ export const ApplicationViews = ({setAuthUser, isAuthenticated}) => {
 
 
 
-            <Route path="/workoutPlans">
+            <Route exact path="/workoutPlans/:workoutPlanId(\d+)">
+                <WorkoutPlanForm />
                 
             </Route>
 
@@ -30,7 +32,7 @@ export const ApplicationViews = ({setAuthUser, isAuthenticated}) => {
                 <NewPlanForm />
             </Route>
 
-            <Route path="/">
+            <Route exact path="/">
                 <WorkoutPlanList />
             </Route>
 

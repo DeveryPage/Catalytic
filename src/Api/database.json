@@ -214,12 +214,12 @@
   ],
   "plandWorkouts": [
     {
-      "id": 1,
-      "workoutId": 1,
-      "planId": 1,
-      "sets": 4,
+      "workoutId": 14,
+      "workoutPlanId": 1,
+      "sets": 12,
       "reps": 12,
-      "restTime": "one minute"
+      "restTime": "1",
+      "id": 1
     }
   ],
   "muscleGroups": [
@@ -238,19 +238,9 @@
   ],
   "workoutPlans": [
     {
-      "id": 1,
       "userId": 1,
-      "name": "Built like SuperMan"
-    },
-    {
-      "userId": 1,
-      "name": "Oran",
-      "id": 2
-    },
-    {
-      "userId": 1,
-      "name": "Funsies",
-      "id": 3
+      "name": "pop",
+      "id": 1
     }
   ],
   "days": [

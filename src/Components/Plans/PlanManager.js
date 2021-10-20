@@ -54,3 +54,13 @@ export const addPlan = (newPlan) => {
         body: JSON.stringify(newPlan)
     }).then(response => response.json())
 }
+
+export const getAllPlandWorkouts = () => {
+    return fetch(`${remoteURL}/plandWorkouts`)
+    .then(res => res.json())
+}
+
+export const getEntirePlan = () => {
+    return fetch(`${remoteURL}/plandWorkouts?_expand=workoutPlan&_expand=workout`
+    .then(res => res.json()))
+}

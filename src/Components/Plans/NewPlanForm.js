@@ -1,7 +1,8 @@
 import React, { useState} from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import { PlanCard } from './PlanCard';
 import { addPlan } from './PlanManager';
+
 
 export const NewPlanForm = () => {
     const history = useHistory();
@@ -52,6 +53,8 @@ export const NewPlanForm = () => {
             onClick={handleClickSavePlan}>
                 Save Plan Name
             </button>
+            <Link to={`/workoutPlans/1`}>
+            </Link>
         </form>
     )
 }
