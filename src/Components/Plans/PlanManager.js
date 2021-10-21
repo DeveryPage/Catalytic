@@ -60,6 +60,11 @@ export const getAllPlandWorkouts = () => {
     .then(res => res.json())
 }
 
+export const getWorkoutById = (workoutId) => {
+    return fetch(`${remoteURL}/workouts/${workoutId}`)
+    .then(res => res.json())
+}
+
 export const getEntirePlan = () => {
     return fetch(`${remoteURL}/plandWorkouts?_expand=workoutPlan&_expand=workout`
     .then(res => res.json()))

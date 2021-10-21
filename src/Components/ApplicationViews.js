@@ -7,6 +7,8 @@ import { NewPlanForm } from "./Plans/NewPlanForm"
 import { PlanCard } from "./Plans/PlanCard"
 import { WorkoutPlanList } from "./Plans/PlanList"
 import { WorkoutPlanForm } from "./WorkoutPlanForm"
+import { BasicTipCard } from "./Tips/BasicTipCard"
+import { MuscleTipDetail } from "./Tips/MuscleTipDetail"
 
 export const ApplicationViews = ({setAuthUser, isAuthenticated}) => {
     // const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("catalytic_user") !== null)
@@ -21,11 +23,16 @@ export const ApplicationViews = ({setAuthUser, isAuthenticated}) => {
                 <RegisterForm setAuthUser={setAuthUser} />
             </Route>
 
+            <Route path="/tips/:workourId(\d+)">
+                <MuscleTipDetail />
+            </Route>
 
+            <Route path="/tips">
+                <BasicTipCard />
+            </Route>
 
             <Route exact path="/workoutPlans/:workoutPlanId(\d+)">
                 <WorkoutPlanForm />
-                
             </Route>
 
             <Route path="/workoutPlans/create">
