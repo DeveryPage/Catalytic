@@ -1,1 +1,38 @@
-placeholder
+.basic_tip_content {
+    display: flex;
+    width: 50%;
+}
+
+.basic_tip_card {
+    display: flex;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: black solid 2px;
+    margin-top: 50px;
+}
+
+.clickhere a:link{
+       color : #38B6FF;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+    background-color: white;
+}
+
+h3 {
+    border: black solid 2px
+}
+
+/* html {
+background-color: black;
+} */

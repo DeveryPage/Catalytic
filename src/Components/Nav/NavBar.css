@@ -20,9 +20,9 @@ a:-webkit-any-link {
 
 
 
-a:visited {
+.navbar a:visited {
     color:white;
 }
-a:hover {
+.navbar a:hover {
     color: wheat
 }
