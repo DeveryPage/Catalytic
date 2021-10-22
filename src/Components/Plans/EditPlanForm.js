@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from "react"
-import { update, getPlandWorkoutById } from "./PlanManager"
+import { updatePlan, getPlandWorkoutById } from "./PlanManager"
 import {useParams, useHistory} from "react-router-dom"
 
 export const EditPlanForm = () => {
@@ -12,7 +12,7 @@ export const EditPlanForm = () => {
     })
     const [isLoading, setIsLoading] = useState(false);
 
-    const {plandWorkoutId} = useParams();
+    const {workoutPlanId} = useParams();
     const history = useHistory();
 
     const handleFieldChange = evt => {
@@ -26,21 +26,22 @@ export const EditPlanForm = () => {
         setIsLoading(true);
 
         const editedPlandWorkout = {
-            id: plandWorkoutId,
-            sets: plandWorkout.sets,
-            reps: plandWorkout.reps,
+            id: workoutPlanId,
+            sets: parseInt(plandWorkout.sets),
+            reps: parseInt(plandWorkout.reps),
             restTime: plandWorkout.restTime,
-            workoutId: 1,
-            workoutPlanId: 1
+            workoutId: plandWorkout.workoutId,
+            workoutPlanId: plandWorkout.workoutPlanId
         };
 
-        update(editedPlandWorkout)
-        .then(() => history.push("/plandWorkouts")
+        updatePlan(editedPlandWorkout)
+        .then(() => history.push("/")
         )
     }
 
     useEffect(() => {
-        getPlandWorkoutById(plandWorkoutId)
+        debugger
+        getPlandWorkoutById(workoutPlanId)
         .then(plandWorkout => {
             setPlandWorkout(plandWorkout);
             setIsLoading(false);
@@ -61,7 +62,7 @@ export const EditPlanForm = () => {
                     value={plandWorkout.sets}
                     />
 
-                    <label htmlFor="sets">Reps: </label>
+                    <label htmlFor="reps">Reps: </label>
                     <input
                     type="text"
                     required
