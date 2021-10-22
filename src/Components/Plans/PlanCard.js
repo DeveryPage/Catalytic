@@ -1,7 +1,7 @@
 import React from "react";
 import {Link, useHistory} from "react-router-dom";
 
-export const PlanCard = ({plan}) => {
+export const PlanCard = ({plan, handleDeletePlan}) => {
     const history = useHistory();
 
     return (
@@ -14,6 +14,11 @@ export const PlanCard = ({plan}) => {
                 type="button"
                 onClick={() => history.push(`/workoutPlans/${plan.workoutPlan.id}/edit`)}>
                     Edit
+                </button>
+                <button
+                type="button"
+                onClick={() => handleDeletePlan(plan.id)}>
+                    Delete
                 </button>
             </div>
         </div>

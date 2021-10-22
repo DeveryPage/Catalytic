@@ -201,26 +201,9 @@
       "image": "https://www.xtr.gr/images/thumbnails/590/560/detailed/21/1180_1125.jpg.jpg",
       "tips": "If on a machine, make sure to refer to adjustment guide to see proper adjustments. Keep elbows in.",
       "muscleGroupId": 1
-    },
-    {
-      "id": 21,
-      "name": "Jogging",
-      "description": "Works on cardio. On a tread mill or out in nature, jogging is a good warm up and exercise.",
-      "video": "https://media1.tenor.com/images/cd5126eff8572af57bd33219712337f7/tenor.gif?itemid=7780277",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.2i9MFETzs4dTBKx6BFboQAHaE7&pid=Api&P=0&w=301&h=201",
-      "tips": "Stay at a steady pace and focus on breathing.",
-      "muscleGroupId": 3
     }
   ],
   "plandWorkouts": [
-    {
-      "workoutId": 1,
-      "workoutPlanId": 1,
-      "sets": 5,
-      "reps": 12,
-      "restTime": "1 minute",
-      "id": 1
-    },
     {
       "workoutId": 2,
       "workoutPlanId": 1,

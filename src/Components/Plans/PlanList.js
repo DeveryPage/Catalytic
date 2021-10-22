@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { PlanCard } from "./PlanCard";
-import { getAllPlans } from "./PlanManager";
+import { getAllPlans, deleteEntirePlan } from "./PlanManager";
 
 export const WorkoutPlanList = () => {
     const [plans, setPlans] = useState([]);
@@ -14,10 +14,15 @@ export const WorkoutPlanList = () => {
     useEffect(() => {
         getPlans();
     }, []);
+
+    const handleDeletePlan = id => {
+        deleteEntirePlan(id)
+        .then(() => getAllPlans().then(setPlans));
+    }
         
     return (
         <div className="container-cards">
-            {plans.map(plan => <PlanCard key={plan.id} plan={plan}/>)}
+            {plans.map(plan => <PlanCard key={plan.id} plan={plan} handleDeletePlan={handleDeletePlan} />)}
         </div>
     )
 }
