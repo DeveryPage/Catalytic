@@ -216,41 +216,41 @@
     {
       "workoutId": 1,
       "workoutPlanId": 1,
-      "sets": 4,
-      "reps": 4,
-      "restTime": "1 min",
+      "sets": 5,
+      "reps": 12,
+      "restTime": "1 minute",
       "id": 1
     },
     {
-      "workoutId": 6,
+      "workoutId": 2,
       "workoutPlanId": 1,
-      "sets": 4,
-      "reps": 4,
-      "restTime": "8",
+      "sets": 15,
+      "reps": 3,
+      "restTime": "2 mins",
       "id": 2
     },
     {
-      "workoutId": 0,
+      "workoutId": 3,
       "workoutPlanId": 1,
-      "sets": 888888,
-      "reps": 0,
-      "restTime": "",
+      "sets": 5,
+      "reps": 1,
+      "restTime": "1 min",
       "id": 3
     },
     {
       "workoutId": 1,
-      "workoutPlanId": 3,
-      "sets": 4,
-      "reps": 4,
-      "restTime": "4",
+      "workoutPlanId": 2,
+      "sets": 999,
+      "reps": 999,
+      "restTime": "0",
       "id": 4
     },
     {
-      "workoutId": 7,
-      "workoutPlanId": 3,
-      "sets": 5,
-      "reps": 5,
-      "restTime": "5",
+      "workoutId": 2,
+      "workoutPlanId": 2,
+      "sets": 999,
+      "reps": 99,
+      "restTime": "66",
       "id": 5
     }
   ],
@@ -271,23 +271,13 @@
   "workoutPlans": [
     {
       "userId": 1,
-      "name": "Plan",
+      "name": "Iron Man Plan",
       "id": 1
     },
     {
       "userId": 1,
-      "name": "Devery 2",
+      "name": "5555",
       "id": 2
-    },
-    {
-      "userId": 1,
-      "name": "Devery",
-      "id": 3
-    },
-    {
-      "userId": 1,
-      "name": "sdsdsd",
-      "id": 4
     }
   ],
   "days": [

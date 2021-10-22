@@ -1,0 +1,20 @@
+ .muscle__card {
+    display: flex;
+    width: 30%;
+    border: black solid 2px;
+ }
+ 
+ .muscle__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ 
+ /*
+ how to add color to everything
+ background:#D7CFE4;
+position:absolute;
+top:0px;
+right:0px;
+bottom:0px;
+left:0px; */

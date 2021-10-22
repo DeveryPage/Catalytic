@@ -4,6 +4,7 @@ export const BasicTipCard = () => {
 
     return (
         <>
+        
             <div className="intro">
                 <h1>The Beginners' Guide To Working Out</h1>
                 <h3>Now before anyone goes to the gym, there are quite a few things to keep in mind as general knowedge for working out. Some of these things will be easy to get down or remember, and others will take some practice but will be easy after a little bit.</h3>
@@ -46,6 +47,7 @@ export const BasicTipCard = () => {
                     </div>
                 </div>
             </div>
+            
         </>
     )
 }
