@@ -12,8 +12,8 @@ export const getAllPlans = () => {
 }
 
 
-export const deletePlan = (id) => {
-    return fetch(`${remoteURL}/workoutPlans/${id}`, {
+export const deleteEntirePlan = (id) => {
+    return fetch(`${remoteURL}/plandWorkouts/${id}?_expand=workoutPlan`, {
         method:"DELETE"
     }).then(result => result.json())
 }
