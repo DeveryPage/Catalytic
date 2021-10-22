@@ -30,6 +30,16 @@ export const update = (editedPlan) => {
     }).then(data => data.json())
 }
 
+export const updatePlan = (editedPlan) => {
+    return fetch(`${remoteURL}/plandWorkouts/${editedPlan.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(editedPlan)
+    }).then(data => data.json())
+}
+
 export const getAllWorkouts = () => {
     return fetch(`${remoteURL}/workouts`)
     .then(res => res.json())
@@ -73,4 +83,9 @@ export const getEntirePlan = () => {
 export const getPlandWorkoutById = (plandWorkoutId) => {
     return fetch(`${remoteURL}/plandWorkouts/${plandWorkoutId}`)
     .then(res =>res.json())
+}
+
+export const getPlandWorkoutByPlanId = (id) => {
+    return fetch(`${remoteURL}/plandWorkouts?workoutPlanId=${id}`)
+    .then(res => res.json())
 }

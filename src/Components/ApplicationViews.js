@@ -11,6 +11,7 @@ import { BasicTipCard } from "./Tips/BasicTipCard"
 import { MuscleTipDetail } from "./Tips/MuscleTipDetail"
 import { MuscleTipList } from "./Tips/MuscleTipList"
 import { EditPlanForm } from "./Plans/EditPlanForm"
+import { PlandWorkoutList } from "./Plans/PlandWorkoutList"
 
 export const ApplicationViews = ({setAuthUser, isAuthenticated}) => {
     // const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("catalytic_user") !== null)
@@ -39,7 +40,7 @@ export const ApplicationViews = ({setAuthUser, isAuthenticated}) => {
                 <WorkoutPlanForm />
             </Route>
 
-            <Route path="/workoutPlans/:workoutPlanId(\d+)/edit">
+            <Route path="/plandWorkouts/:workoutPlanId(\d+)/edit">
                 <EditPlanForm />
             </Route>
 
