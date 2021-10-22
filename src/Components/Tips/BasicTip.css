@@ -1,6 +1,6 @@
 .basic_tip_content {
     display: flex;
-    width: 50%;
+    width: 100%;
 }
 
 .basic_tip_card {
@@ -13,7 +13,7 @@
     align-items: center;
     background-color: white;
     border: black solid 2px;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .clickhere a:link{
@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 50%;
+    width: 100%;
     align-items: center;
     background-color: white;
 }
@@ -36,3 +36,4 @@ h3 {
 /* html {
 background-color: black;
 } */
+

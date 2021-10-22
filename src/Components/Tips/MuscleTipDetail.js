@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { getWorkoutById } from "../Plans/PlanManager";
-import {useParams, useHistory} from "react-router-dom"
+import {useParams} from "react-router-dom"
 
 export const MuscleTipDetail = () => {
     const [workout, setWorkout] = useState({
@@ -12,7 +12,6 @@ export const MuscleTipDetail = () => {
     })
 
     const {workoutId} = useParams();
-    const history = useHistory();
 
     useEffect(() => {
         getWorkoutById(workoutId)
@@ -33,10 +32,10 @@ export const MuscleTipDetail = () => {
             <h5 className="workout__description">{workout.description}</h5>
             <h5 className="workout__tips">{workout.tips}</h5>
             <div className="workout__video">
-                <video>{workout.video}</video>
+                <img src={workout.video} /> 
             </div>
             <div className="workout__image">
-                <image>{workout.image}</image>
+                <img src={workout.image} />
             </div>
         </section>
     )

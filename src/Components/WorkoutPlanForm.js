@@ -119,11 +119,6 @@ export const WorkoutPlanForm = () => {
             onClick={handleClickSaveandClear}>
                 Save Workout
             </button>
-            <button
-            className="addWorkout_btn"
-            onClick={WorkoutPlanForm}>
-                Add Another Workout
-            </button>
         </form>
     )
 }
