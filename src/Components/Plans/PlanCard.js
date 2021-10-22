@@ -12,7 +12,7 @@ export const PlanCard = ({plan, handleDeletePlan}) => {
                 </span></h3>
                 <button 
                 type="button"
-                onClick={() => history.push(`/workoutPlans/${plan.workoutPlan.id}/edit`)}>
+                onClick={() => history.push(`/workoutPlans/${plan.id}/edit`)}>
                     Edit
                 </button>
                 <button

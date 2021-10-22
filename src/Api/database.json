@@ -205,35 +205,43 @@
   ],
   "plandWorkouts": [
     {
-      "workoutId": 2,
+      "workoutId": 1,
       "workoutPlanId": 1,
       "sets": 15,
+      "reps": 5,
+      "restTime": "1",
+      "id": 1
+    },
+    {
+      "workoutId": 10,
+      "workoutPlanId": 1,
+      "sets": 3,
       "reps": 3,
-      "restTime": "2 mins",
+      "restTime": "12",
       "id": 2
     },
     {
-      "workoutId": 3,
+      "workoutId": 15,
       "workoutPlanId": 1,
       "sets": 5,
-      "reps": 1,
-      "restTime": "1 min",
+      "reps": 9,
+      "restTime": "12",
       "id": 3
     },
     {
-      "workoutId": 1,
-      "workoutPlanId": 2,
-      "sets": 999,
-      "reps": 999,
-      "restTime": "0",
+      "workoutId": 20,
+      "workoutPlanId": 1,
+      "sets": 8,
+      "reps": 9,
+      "restTime": "10",
       "id": 4
     },
     {
-      "workoutId": 2,
-      "workoutPlanId": 2,
-      "sets": 999,
-      "reps": 99,
-      "restTime": "66",
+      "workoutId": 0,
+      "workoutPlanId": 1,
+      "sets": 9,
+      "reps": 18,
+      "restTime": "1",
       "id": 5
     }
   ],
@@ -254,13 +262,8 @@
   "workoutPlans": [
     {
       "userId": 1,
-      "name": "Iron Man Plan",
+      "name": "Oh wow",
       "id": 1
-    },
-    {
-      "userId": 1,
-      "name": "5555",
-      "id": 2
     }
   ],
   "days": [

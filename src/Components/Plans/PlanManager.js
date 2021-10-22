@@ -13,7 +13,7 @@ export const getAllPlans = () => {
 
 
 export const deleteEntirePlan = (id) => {
-    return fetch(`${remoteURL}/plandWorkouts/${id}?_expand=workoutPlan`, {
+    return fetch(`${remoteURL}/workoutPlans/${id}`, {
         method:"DELETE"
     }).then(result => result.json())
 }
@@ -68,4 +68,9 @@ export const getWorkoutById = (workoutId) => {
 export const getEntirePlan = () => {
     return fetch(`${remoteURL}/plandWorkouts?_expand=workoutPlan&_expand=workout`
     .then(res => res.json()))
+}
+
+export const getPlandWorkoutById = (plandWorkoutId) => {
+    return fetch(`${remoteURL}/plandWorkouts/${plandWorkoutId}`)
+    .then(res =>res.json())
 }
