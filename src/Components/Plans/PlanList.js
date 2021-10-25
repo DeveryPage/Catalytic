@@ -4,10 +4,11 @@ import { getAllPlans, deleteEntirePlan } from "./PlanManager";
 
 export const WorkoutPlanList = () => {
     const [plans, setPlans] = useState([]);
+    let user = JSON.parse(sessionStorage.getItem("catalytic_user"))
 
     const getPlans = () => {
-        return getAllPlans().then(plansFromAPI => {
-            setPlans(plansFromAPI)
+        return getAllPlans(user.id).then(response => {
+            setPlans(response)
         });
     };
 
@@ -17,9 +18,9 @@ export const WorkoutPlanList = () => {
 
     const handleDeletePlan = id => {
         deleteEntirePlan(id)
-        .then(() => getAllPlans().then(setPlans));
+        .then(() => getAllPlans(user).then(setPlans));
     }
-        
+     console.log(plans)   
     return (
         <div className="container-cards">
             {plans.map(plan => <PlanCard key={plan.id} plan={plan} handleDeletePlan={handleDeletePlan} />)}

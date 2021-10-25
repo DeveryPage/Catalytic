@@ -203,7 +203,32 @@
       "muscleGroupId": 1
     }
   ],
-  "plandWorkouts": [],
+  "plandWorkouts": [
+    {
+      "workoutId": 1,
+      "workoutPlanId": 1,
+      "sets": 9,
+      "reps": 9,
+      "restTime": "1",
+      "id": 1
+    },
+    {
+      "workoutId": 4,
+      "workoutPlanId": 2,
+      "sets": null,
+      "reps": null,
+      "restTime": "g",
+      "id": 2
+    },
+    {
+      "workoutId": 1,
+      "workoutPlanId": 3,
+      "sets": 8,
+      "reps": 8,
+      "restTime": "8",
+      "id": 3
+    }
+  ],
   "muscleGroups": [
     {
       "id": 1,
@@ -218,7 +243,23 @@
       "name": "Cardio"
     }
   ],
-  "workoutPlans": [],
+  "workoutPlans": [
+    {
+      "userId": 1,
+      "name": "Devery",
+      "id": 1
+    },
+    {
+      "userId": 4,
+      "name": "gggg",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "name": "Dory",
+      "id": 3
+    }
+  ],
   "days": [
     {
       "id": 1,

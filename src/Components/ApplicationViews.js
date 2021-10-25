@@ -58,9 +58,7 @@ export const ApplicationViews = ({setAuthUser, isAuthenticated}) => {
             </Route> */}
 
 
-            <Route exact path ="/">
-                <Home />
-            </Route>
+            
         </>
     )
 }
