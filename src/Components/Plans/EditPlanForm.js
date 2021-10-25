@@ -40,7 +40,7 @@ export const EditPlanForm = () => {
     }
 
     useEffect(() => {
-        debugger
+
         getPlandWorkoutById(workoutPlanId)
         .then(plandWorkout => {
             setPlandWorkout(plandWorkout);

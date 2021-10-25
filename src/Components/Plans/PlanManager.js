@@ -6,8 +6,8 @@ export const getPlanById = (workoutPlanId) => {
 }
 
 
-export const getAllPlans = () => {
-    return fetch(`${remoteURL}/workoutPlans`)
+export const getAllPlans = (id) => {
+    return fetch(`${remoteURL}/workoutPlans?userId=${id}&_embed=plandWorkouts`)
     .then(res => res.json())
 }
 
@@ -18,6 +18,10 @@ export const deleteEntirePlan = (id) => {
     }).then(result => result.json())
 }
 
+export const getWorkoutPlanByUserId = (id) => {
+    return fetch(`${remoteURL}/workoutPlans?userId=${id}&_embed=plandWorkouts`)
+    .then(res => res.json())
+}
 
 
 export const update = (editedPlan) => {
