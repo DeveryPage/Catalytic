@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
-import { useHistory, Link } from "react-router";
-import { getAllDays, addPlanDay } from './Plans/PlanManager'
+import React, { useEffect, useState } from "react";
+import { useHistory, Link } from "react-router-dom";
+import { getAllDays, addPlanDay } from "../PlanManager";
 
-export const DayForm = () => {
+
+export const DaysForm = () => {
     const history = useHistory();
 
     const [days, setDays] = useState ([])
@@ -47,15 +48,20 @@ export const DayForm = () => {
                 <fieldset>
                     <div className="form-group">
                         <label htmlFor="name">Day: </label>
-                        <input type="checkbox" id="Monday" name="Monday" value="Monday"></input>
-                        <input type="checkbox" id="Tuesday" name="Tuesday" value="Tuesday"></input>
-                        <input type="checkbox" id="Wednesday" name="Wednesday" value="Wednesday"></input>
-                        <input type="checkbox" id="Thursday" name="Thursday" value="Thursday"></input>
-                        <input type="checkbox" id="Friday" name="Friday" value="Friday"></input>
-                        <input type="checkbox" id="Saturday" name="Saturday" value="Saturday"></input>
-                        <input type="checkbox" id="Sunday" name="Sunday" value="Sunday"></input>
+                        <input onChange={handleControlledInputChange} type="checkbox" id="Monday" name="Monday" value="Monday"></input>
+                        <input onChange={handleControlledInputChange} type="checkbox" id="Tuesday" name="Tuesday" value="Tuesday"></input>
+                        <input onChange={handleControlledInputChange} type="checkbox" id="Wednesday" name="Wednesday" value="Wednesday"></input>
+                        <input onChange={handleControlledInputChange} type="checkbox" id="Thursday" name="Thursday" value="Thursday"></input>
+                        <input onChange={handleControlledInputChange} type="checkbox" id="Friday" name="Friday" value="Friday"></input>
+                        <input onChange={handleControlledInputChange} type="checkbox" id="Saturday" name="Saturday" value="Saturday"></input>
+                        <input onChange={handleControlledInputChange} type="checkbox" id="Sunday" name="Sunday" value="Sunday"></input>
                     </div>
                 </fieldset>
+                <button
+                className="save_day_btn"
+                onClick={handleClickSaveandClear}>
+                    Save Days
+                </button>
             </form>
         )
 
