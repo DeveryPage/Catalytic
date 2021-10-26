@@ -4,9 +4,10 @@ Need fetch that gets all workouts
 */
 import { getAllWorkouts } from './Plans/PlanManager';
 import React, { useState, useEffect} from 'react';
-import { useHistory, useParams } from 'react-router-dom';
+import { Link, useHistory, useParams } from 'react-router-dom';
 import { addPlandWorkout } from './Plans/PlanManager';
 import { getAllPlandWorkouts } from './Plans/PlanManager';
+
 
 export const WorkoutPlanForm = () => {
     const history = useHistory();
@@ -17,8 +18,8 @@ export const WorkoutPlanForm = () => {
     const [plandWorkout, setPlandWorkout] = useState({
         workoutId: 0,
         workoutPlanId: 0,
-        sets: 0,
-        reps: 0,
+        sets: "",
+        reps: "",
         restTime: ""
     })
 
@@ -76,8 +77,8 @@ export const WorkoutPlanForm = () => {
             .then(() => setPlandWorkout( {
                 workoutId: 0,
                 workoutPlanId: 0,
-                sets: 0,
-                reps: 0,
+                sets: "",
+                reps: "",
                 restTime: ""
             }))
     }
@@ -90,7 +91,7 @@ export const WorkoutPlanForm = () => {
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="name">Workout: </label>
-                    <select type="select" onChange={handleControlledInputChange} id="workoutId" required autoFocus className="form-control">
+                    <select type="select" value={plandWorkout.workoutId} onChange={handleControlledInputChange} id="workoutId" required autoFocus className="form-control">
                         <option value="0" >Please Select A Workout...</option>
                         {workouts.map(workout => <option key={workout.id} value={workout.id}>{workout.name}</option>)}
                     </select>
@@ -118,6 +119,11 @@ export const WorkoutPlanForm = () => {
             className="saveWorkout_btn"
             onClick={handleClickSaveandClear}>
                 Save Workout
+            </button>
+            <button
+            className="next_btn"
+            onClick={() => history.push(`/days/create`)}>
+                Next
             </button>
         </form>
     )

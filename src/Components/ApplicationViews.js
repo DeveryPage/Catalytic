@@ -10,6 +10,7 @@ import { MuscleTipDetail } from "./Tips/MuscleTipDetail"
 import { MuscleTipList } from "./Tips/MuscleTipList"
 import { EditPlanForm } from "./Plans/EditPlanForm"
 import { PlandWorkoutList } from "./Plans/PlandWorkoutList"
+import { DaysForm } from "./Plans/Days/DaysForm"
 
 export const ApplicationViews = ({setAuthUser, isAuthenticated}) => {
     // const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("catalytic_user") !== null)
@@ -48,7 +49,9 @@ export const ApplicationViews = ({setAuthUser, isAuthenticated}) => {
                 <PlanCard />
             </Route> */}
 
-
+            <Route path="/days/create">
+                <DaysForm />
+            </Route>
             
         </>
     )
