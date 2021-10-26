@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import { PlandWorkoutList } from "./PlandWorkoutList";
+import { WorkoutPlanForm } from "../WorkoutPlanForm";
 
 export const PlanCard = ({ plan, handleDeletePlan }) => {
     const history = useHistory();
@@ -11,35 +12,44 @@ export const PlanCard = ({ plan, handleDeletePlan }) => {
                 <h3>Name: <span className="card-plan-name">
                     {plan.name}
                 </span></h3>
+                <button
+                    type="button"
+                    onClick={() => handleDeletePlan(plan.id)}>
+                    Delete
+                </button>
+                <button type="button"
+                    onClick={() => history.push(`/workoutPlans/${plan.id}`)}>
+                    Add Another Workout
+                </button>
                 <div className="workout__card">
-                    
-                      
-                        <div className="workout__card_content">
-                        <h3>Name: <span className="workout__name">
-                            {plan.plandWorkout.name}
-                        </span></h3>
-                        <h4>Sets: {plan.plandWorkout.sets}</h4>
-                        <h4>Reps: {plan.plandWorkout.reps}</h4>
-                        <h4>Rest Time: {plan.plandWorkout.restTime}</h4>
-                        <button
-                            type="button"
-                            onClick={() => history.push(`/plandWorkouts/${plan.plandWorkout.id}/edit`)}>
-                            Edit
-                        </button>
-                    </div>
-                    
-                    
+
+
+                    {
+                        plan.plandWorkouts.map(plandWorkout => {
+                            return <div key={plandWorkout.id} className="workout__card_content">
+                                <h3>Name: <span className="workout__name">
+                                    {plandWorkout.name}
+                                </span></h3>
+                                <h4>Sets: {plandWorkout.sets}</h4>
+                                <h4>Reps: {plandWorkout.reps}</h4>
+                                <h4>Rest Time: {plandWorkout.restTime}</h4>
+                                <button
+                                    type="button"
+                                    onClick={() => history.push(`/plandWorkouts/${plandWorkout.id}/edit`)}>
+                                    Edit
+                                </button>
+                            </div>
+                        })
+
+                    }
+
+
                 </div>
                 {/* <button 
                 type="button"
                 onClick={() => history.push(`/workoutPlans/${plan.id}/edit`)}>
                     Edit
                 </button> */}
-                <button
-                    type="button"
-                    onClick={() => handleDeletePlan(plan.id)}>
-                    Delete
-                </button>
             </div>
         </div>
     )
