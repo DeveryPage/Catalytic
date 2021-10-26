@@ -213,6 +213,22 @@
       "id": 1
     },
     {
+      "id": 4,
+      "sets": 9999,
+      "reps": 9999,
+      "restTime": "19999",
+      "workoutId": 1,
+      "workoutPlanId": 1
+    },
+    {
+      "workoutId": 1,
+      "workoutPlanId": 1,
+      "sets": 9,
+      "reps": 9,
+      "restTime": "1",
+      "id": 5
+    },
+    {
       "workoutId": 4,
       "workoutPlanId": 2,
       "sets": null,
@@ -227,6 +243,14 @@
       "reps": 8,
       "restTime": "8",
       "id": 3
+    },
+    {
+      "workoutId": 19,
+      "workoutPlanId": 1,
+      "sets": 5,
+      "reps": 5,
+      "restTime": "1",
+      "id": 6
     }
   ],
   "muscleGroups": [
@@ -294,7 +318,7 @@
     {
       "id": 1,
       "dayId": 1,
-      "planId": 1
+      "workoutPlanId": 1
     }
   ]
 }
