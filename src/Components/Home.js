@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react"
 
-export const Home = () => {
+export const Home = (user) => {
     
     return (
         <>
-            <h1>Welcome</h1>
+            <h1>Welcome {user.name}</h1>
         </>
     )
 }

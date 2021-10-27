@@ -5,10 +5,8 @@ export const DayCard = ({day}) => {
 
 
     return (
-        <div>
-            <div>
-                <h3>Days: {day.name} </h3>
-            </div>
-        </div>
+
+                <h4>{day.day?.name} </h4>
+
     )
 }

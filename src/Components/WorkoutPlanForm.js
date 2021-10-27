@@ -23,12 +23,6 @@ export const WorkoutPlanForm = () => {
         restTime: ""
     })
 
-    // useEffect(() => {
-    //     getAllPlandWorkouts().then((res) => {
-    //         setPlandWorkouts(res)
-    //     })
-    // }, [])
-
     
     useEffect(() => {
         getAllWorkouts().then((res) => {
@@ -121,8 +115,9 @@ export const WorkoutPlanForm = () => {
                 Save Workout
             </button>
             <button
+            type="button"
             className="next_btn"
-            onClick={() => history.push(`/days/create`)}>
+            onClick={() => history.push(`/days/create/${workoutPlanId}`)}>
                 Next
             </button>
         </form>

@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useHistory, Link } from "react-router-dom";
 import { getAllDays, addPlanDay } from "../PlanManager";
+import { useParams } from "react-router";
 
 
 export const DaysForm = () => {
+
     const history = useHistory();
 
     const [days, setDays] = useState ([])
+
+    const {workoutPlanId} = useParams();
 
     const [planDay, setPlanDay] = useState({
         dayId: 0,
@@ -34,7 +38,7 @@ export const DaysForm = () => {
         event.preventDefault()
         const myDay = {
             dayId: planDay.dayId,
-            workoutPlanId: planDay.workoutPlanId
+            workoutPlanId: parseInt(workoutPlanId)
         }
         addPlanDay(myDay)
         .then(() => setPlanDay( {
@@ -46,21 +50,23 @@ export const DaysForm = () => {
             <form className="dayForm">
                 <h2 className="day_Form_title">Choose Your Days</h2>
                 <fieldset>
-                    <div className="form-group">
-                        <label htmlFor="name">Day: </label>
-                        <input onChange={handleControlledInputChange} type="checkbox" id="Monday" name="Monday" value="Monday"></input>
-                        <input onChange={handleControlledInputChange} type="checkbox" id="Tuesday" name="Tuesday" value="Tuesday"></input>
-                        <input onChange={handleControlledInputChange} type="checkbox" id="Wednesday" name="Wednesday" value="Wednesday"></input>
-                        <input onChange={handleControlledInputChange} type="checkbox" id="Thursday" name="Thursday" value="Thursday"></input>
-                        <input onChange={handleControlledInputChange} type="checkbox" id="Friday" name="Friday" value="Friday"></input>
-                        <input onChange={handleControlledInputChange} type="checkbox" id="Saturday" name="Saturday" value="Saturday"></input>
-                        <input onChange={handleControlledInputChange} type="checkbox" id="Sunday" name="Sunday" value="Sunday"></input>
-                    </div>
+                <div className="form-group">
+                    <label htmlFor="name">Day: </label>
+                    <select type="select" value={planDay.planId} onChange={handleControlledInputChange} id="dayId" required autoFocus className="form-control">
+                        <option value="0" >Please Select A Day...</option>
+                        {days.map(day => <option key={day.id} value={day.id}>{day.name}</option>)}
+                    </select>
+                </div>
                 </fieldset>
                 <button
                 className="save_day_btn"
                 onClick={handleClickSaveandClear}>
                     Save Days
+                </button>
+                <button
+                className="finishPlanBtn"
+                onClick={() => history.push(`/`)}>
+                    Complete Plan
                 </button>
             </form>
         )

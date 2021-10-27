@@ -210,30 +210,6 @@
   ],
   "plandWorkouts": [
     {
-      "workoutId": 1,
-      "workoutPlanId": 1,
-      "sets": 9,
-      "reps": 9,
-      "restTime": "1",
-      "id": 1
-    },
-    {
-      "id": 4,
-      "sets": 9999,
-      "reps": 9999,
-      "restTime": "19999",
-      "workoutId": 1,
-      "workoutPlanId": 1
-    },
-    {
-      "workoutId": 1,
-      "workoutPlanId": 1,
-      "sets": 9,
-      "reps": 9,
-      "restTime": "1",
-      "id": 5
-    },
-    {
       "workoutId": 4,
       "workoutPlanId": 2,
       "sets": null,
@@ -242,68 +218,44 @@
       "id": 2
     },
     {
-      "workoutId": 19,
-      "workoutPlanId": 1,
-      "sets": 5,
-      "reps": 5,
-      "restTime": "1",
-      "id": 6
-    },
-    {
       "workoutId": 1,
       "workoutPlanId": 3,
-      "sets": 5,
-      "reps": 5,
-      "restTime": "1 min",
-      "id": 7
+      "sets": null,
+      "reps": null,
+      "restTime": "e",
+      "id": 3
     },
     {
-      "workoutId": 12,
+      "workoutId": 4,
       "workoutPlanId": 3,
-      "sets": 5,
-      "reps": 5,
-      "restTime": "1 min",
-      "id": 8
-    },
-    {
-      "workoutId": 15,
-      "workoutPlanId": 3,
-      "sets": 5,
-      "reps": 5,
-      "restTime": "1 min",
-      "id": 9
-    },
-    {
-      "workoutId": 2,
-      "workoutPlanId": 4,
-      "sets": 0,
-      "reps": 0,
-      "restTime": "1",
-      "id": 10
-    },
-    {
-      "workoutId": 1,
-      "workoutPlanId": 5,
-      "sets": 5,
-      "reps": 5,
-      "restTime": "5",
-      "id": 11
+      "sets": null,
+      "reps": null,
+      "restTime": "e",
+      "id": 4
     },
     {
       "workoutId": 9,
-      "workoutPlanId": 5,
-      "sets": 5,
-      "reps": 5,
-      "restTime": "5",
-      "id": 12
+      "workoutPlanId": 3,
+      "sets": null,
+      "reps": null,
+      "restTime": "e",
+      "id": 5
     },
     {
       "workoutId": 1,
-      "workoutPlanId": 5,
-      "sets": 5,
-      "reps": 5,
-      "restTime": "5",
-      "id": 13
+      "workoutPlanId": 4,
+      "sets": 1,
+      "reps": 2,
+      "restTime": "3",
+      "id": 6
+    },
+    {
+      "workoutId": 7,
+      "workoutPlanId": 4,
+      "sets": 1,
+      "reps": 1,
+      "restTime": "999",
+      "id": 7
     }
   ],
   "muscleGroups": [
@@ -322,29 +274,19 @@
   ],
   "workoutPlans": [
     {
-      "userId": 1,
-      "name": "Devery",
-      "id": 1
-    },
-    {
       "userId": 4,
       "name": "gggg",
       "id": 2
     },
     {
       "userId": 1,
-      "name": "AGHHH",
+      "name": "NEw Plan",
       "id": 3
     },
     {
       "userId": 1,
-      "name": "sdfgshg",
+      "name": "Delete this",
       "id": 4
-    },
-    {
-      "userId": 1,
-      "name": "hyhyhyh",
-      "id": 5
     }
   ],
   "days": [
@@ -375,16 +317,38 @@
     {
       "id": 7,
       "name": "Saturday"
-    },
-    {
-      "id": 8
     }
   ],
   "planDays": [
     {
-      "id": 1,
       "dayId": 1,
-      "workoutPlanId": 1
+      "workoutPlanId": 3,
+      "id": 1
+    },
+    {
+      "dayId": 3,
+      "workoutPlanId": 3,
+      "id": 2
+    },
+    {
+      "dayId": 7,
+      "workoutPlanId": 3,
+      "id": 3
+    },
+    {
+      "dayId": 1,
+      "workoutPlanId": 4,
+      "id": 4
+    },
+    {
+      "dayId": 2,
+      "workoutPlanId": 4,
+      "id": 5
+    },
+    {
+      "dayId": 3,
+      "workoutPlanId": 4,
+      "id": 6
     }
   ]
 }

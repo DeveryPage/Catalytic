@@ -22,6 +22,11 @@ export const getPlandWorkoutByPlanId = (id) => {
     .then(res => res.json())
 }
 
+export const getPlanDayByDayId = (id) => {
+    return fetch (`${remoteURL}/planDays?_expand=day`)
+    .then(res => res.json())
+}
+
 
 export const getPlandWorkoutById = (plandWorkoutId) => {
     return fetch(`${remoteURL}/plandWorkouts/${plandWorkoutId}`)
@@ -75,12 +80,12 @@ export const addPlan = (newPlan) => {
 }
 
 export const addPlanDay = (newPlanDay) => {
-    return fetch(`${remoteURL}/days`, {
+    return fetch(`${remoteURL}/planDays`, {
         method: "POST",
         headers: {
-            "Constent-Type": "application/json"
+            "Content-Type": "application/json"
         },
-        body:JSON.stringify(newPlanDay)
+        body: JSON.stringify(newPlanDay)
     }).then(response => response.json())
 }
 

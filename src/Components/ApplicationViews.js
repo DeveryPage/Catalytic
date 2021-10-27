@@ -49,7 +49,7 @@ export const ApplicationViews = ({setAuthUser, isAuthenticated}) => {
                 <PlanCard />
             </Route> */}
 
-            <Route path="/days/create">
+            <Route path="/days/create/:workoutPlanId(\d+)">
                 <DaysForm />
             </Route>
             
