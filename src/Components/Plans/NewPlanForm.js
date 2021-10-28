@@ -1,6 +1,5 @@
 import React, { useState} from 'react';
 import { useHistory, Link } from 'react-router-dom';
-import { PlanCard } from './PlanCard';
 import { addPlan } from './PlanManager';
 
 
@@ -38,7 +37,7 @@ export const NewPlanForm = () => {
         }
     }
 
-    console.log(currentUser.id)
+    
     return (
         <form className="planForm">
             <h2 className="planform_title">New Workout Plan</h2>

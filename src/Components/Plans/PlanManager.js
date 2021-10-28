@@ -18,9 +18,10 @@ export const getWorkoutById = (workoutId) => {
 }
 
 export const getPlandWorkoutByPlanId = (id) => {
-    return fetch(`${remoteURL}/plandWorkouts?workoutPlanId=${id}`)
+    return fetch(`${remoteURL}/plandWorkouts?workoutPlanId=${id}&_expand=workout`)
     .then(res => res.json())
 }
+
 
 export const getPlanDayByDayId = (id) => {
     return fetch (`${remoteURL}/planDays?_expand=day`)
@@ -30,9 +31,13 @@ export const getPlanDayByDayId = (id) => {
 
 export const getPlandWorkoutById = (plandWorkoutId) => {
     return fetch(`${remoteURL}/plandWorkouts/${plandWorkoutId}`)
-    .then(res =>res.json())
+    .then(res => res.json())
 }
 
+export const getWorkoutByPlandWorkoutId = () => {
+    return fetch(`${remoteURL}/workouts?_expand=plandWorkout`)
+    .then(res => res.json())
+}
 
 
 //getAll based Fetches

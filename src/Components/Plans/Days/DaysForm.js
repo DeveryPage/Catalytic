@@ -3,7 +3,7 @@ import { useHistory, Link } from "react-router-dom";
 import { getAllDays, addPlanDay } from "../PlanManager";
 import { useParams } from "react-router";
 
-
+//day form
 export const DaysForm = () => {
 
     const history = useHistory();
@@ -12,17 +12,19 @@ export const DaysForm = () => {
 
     const {workoutPlanId} = useParams();
 
+    //sets state
     const [planDay, setPlanDay] = useState({
         dayId: 0,
         workoutPlanId: 0
     })
-
+    //calls and runs getAllDays then sets state to the response
     useEffect(() => {
         getAllDays().then((res) => {
             setDays(res)
         })
     },[planDay])
 
+//controls when an input is changed
     const handleControlledInputChange = (event) => {
         const newDay = {...planDay}
         let selectedVal = event.target.value

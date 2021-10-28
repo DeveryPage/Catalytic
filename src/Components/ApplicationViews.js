@@ -45,9 +45,6 @@ export const ApplicationViews = ({setAuthUser, isAuthenticated}) => {
                 <WorkoutPlanList />
             </Route>
 
-            {/* <Route path="/allPlans">
-                <PlanCard />
-            </Route> */}
 
             <Route path="/days/create/:workoutPlanId(\d+)">
                 <DaysForm />

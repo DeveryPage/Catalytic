@@ -24,6 +24,16 @@
       "email": "jm@gmail.com",
       "name": "Jack Miller",
       "id": 5
+    },
+    {
+      "email": "ag@gmail.com",
+      "name": "Aliciya Green",
+      "id": 6
+    },
+    {
+      "email": "Brenda@gmail.com",
+      "name": "Brenda Long",
+      "id": 7
     }
   ],
   "workouts": [
@@ -210,52 +220,84 @@
   ],
   "plandWorkouts": [
     {
-      "workoutId": 4,
-      "workoutPlanId": 2,
-      "sets": null,
-      "reps": null,
-      "restTime": "g",
-      "id": 2
-    },
-    {
       "workoutId": 1,
       "workoutPlanId": 3,
-      "sets": null,
-      "reps": null,
-      "restTime": "e",
+      "sets": 4,
+      "reps": 18,
+      "restTime": "1 minute",
       "id": 3
     },
     {
-      "workoutId": 4,
-      "workoutPlanId": 3,
-      "sets": null,
-      "reps": null,
-      "restTime": "e",
-      "id": 4
+      "id": 4,
+      "sets": 5,
+      "reps": 2,
+      "restTime": "1 minuter",
+      "workoutId": 6,
+      "workoutPlanId": 3
     },
     {
-      "workoutId": 9,
+      "workoutId": 5,
       "workoutPlanId": 3,
-      "sets": null,
-      "reps": null,
-      "restTime": "e",
+      "sets": 1,
+      "reps": 0,
+      "restTime": "30",
       "id": 5
     },
     {
       "workoutId": 1,
       "workoutPlanId": 4,
-      "sets": 1,
-      "reps": 2,
-      "restTime": "3",
+      "sets": 5,
+      "reps": 12,
+      "restTime": "1 minute",
       "id": 6
     },
     {
-      "workoutId": 7,
+      "workoutId": 2,
       "workoutPlanId": 4,
-      "sets": 1,
-      "reps": 1,
-      "restTime": "999",
+      "sets": 5,
+      "reps": 12,
+      "restTime": "1 minute",
       "id": 7
+    },
+    {
+      "workoutId": 3,
+      "workoutPlanId": 4,
+      "sets": 4,
+      "reps": 10,
+      "restTime": "1 minute",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "sets": 4,
+      "reps": 15,
+      "restTime": "1 minute",
+      "workoutId": 4,
+      "workoutPlanId": 4
+    },
+    {
+      "workoutId": 8,
+      "workoutPlanId": 4,
+      "sets": 4,
+      "reps": 6,
+      "restTime": "1 minute",
+      "id": 10
+    },
+    {
+      "workoutId": 3,
+      "workoutPlanId": 4,
+      "sets": 5,
+      "reps": 800,
+      "restTime": "1 minute",
+      "id": 11
+    },
+    {
+      "workoutId": 9,
+      "workoutPlanId": 6,
+      "sets": 5,
+      "reps": 555,
+      "restTime": "1 minute",
+      "id": 14
     }
   ],
   "muscleGroups": [
@@ -274,19 +316,19 @@
   ],
   "workoutPlans": [
     {
-      "userId": 4,
-      "name": "gggg",
-      "id": 2
-    },
-    {
-      "userId": 1,
-      "name": "NEw Plan",
+      "userId": 6,
+      "name": "Green and mena",
       "id": 3
     },
     {
       "userId": 1,
-      "name": "Delete this",
+      "name": "Chest",
       "id": 4
+    },
+    {
+      "userId": 7,
+      "name": "Brenda's Plan",
+      "id": 6
     }
   ],
   "days": [
@@ -323,32 +365,32 @@
     {
       "dayId": 1,
       "workoutPlanId": 3,
-      "id": 1
+      "id": 3
     },
     {
-      "dayId": 3,
+      "dayId": 4,
       "workoutPlanId": 3,
-      "id": 2
+      "id": 4
     },
     {
       "dayId": 7,
       "workoutPlanId": 3,
-      "id": 3
+      "id": 5
     },
     {
       "dayId": 1,
       "workoutPlanId": 4,
-      "id": 4
-    },
-    {
-      "dayId": 2,
-      "workoutPlanId": 4,
-      "id": 5
-    },
-    {
-      "dayId": 3,
-      "workoutPlanId": 4,
       "id": 6
+    },
+    {
+      "dayId": 5,
+      "workoutPlanId": 4,
+      "id": 7
+    },
+    {
+      "dayId": 1,
+      "workoutPlanId": 6,
+      "id": 11
     }
   ]
 }

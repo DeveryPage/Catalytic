@@ -1,10 +1,12 @@
 import { PlandWorkoutCard } from "./PlandWorkoutCard";
-import { getWorkoutPlanByUserId } from "./PlanManager";
+import { getWorkoutPlanByUserId, getWorkoutByPlandWorkoutId } from "./PlanManager";
 import React, { useState, useEffect } from "react";
 
 
 export const PlandWorkoutList = ({planId}) => {
     const [plandWorkouts, setPlandWorkouts] = useState([]);
+
+    const [workouts, setWorkouts] = useState([])
 
     const user = JSON.parse(sessionStorage.getItem("catalytic_user"))
 
@@ -15,15 +17,17 @@ export const PlandWorkoutList = ({planId}) => {
     };
   
     useEffect(() => {
-
-        getPlandWorkouts();
+    getPlandWorkouts();
+    getWorkoutByPlandWorkoutId().then(response => setWorkouts(response))
     }, []);
 
-    console.log(plandWorkouts)
+
+
+    
   return (
       <>
         <div>
-            {plandWorkouts.plandWorkouts?.map(plandWorkout => <PlandWorkoutCard key={plandWorkout.id} plandWorkout={plandWorkout} />)}
+            {plandWorkouts?.map(plandWorkout => <PlandWorkoutCard key={plandWorkout.id} plandWorkout={plandWorkout} workouts={workouts}/>)}
         </div>
       </>
   );

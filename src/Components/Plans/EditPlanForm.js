@@ -13,6 +13,8 @@ export const EditPlanForm = () => {
     const [isLoading, setIsLoading] = useState(false);
 
     const {workoutPlanId} = useParams();
+
+    //history is what changes pages
     const history = useHistory();
 
     const handleFieldChange = evt => {
