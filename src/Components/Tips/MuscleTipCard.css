@@ -1,25 +1,50 @@
 .muscle_card {
     display: flex;
-    width: 30%;
-    border: black solid 2px;
+    width: 15%;
+    
+    border: #38B6FF solid 2px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    margin: 30px
+ }
+
+ .muscle-card-body {
+    display: flex;
+   flex-direction: column;
+   align-items: center;
  }
 
  img {
-    width: 50%
+    width: 50%;
+    height: 50%;
  }
  
  .muscle__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
  }
 
  .details-btn{
-    border-radius: 5%;
+   border-radius: 5px;
+    background-color: #38B6FF;
+    color: white;
+    border: Black;
+    width: 120px;
+    height: 25px
  }
 
  .muscle-card-title {
+    display: flex;
     border: none
+ }
+
+ html {
+    background-color: Black;
  }
  
  /* .muscle__card {

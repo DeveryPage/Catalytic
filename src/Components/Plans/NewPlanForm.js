@@ -1,6 +1,7 @@
 import React, { useState} from 'react';
 import { useHistory, Link } from 'react-router-dom';
 import { addPlan } from './PlanManager';
+import "./NewPlan.css"
 
 
 export const NewPlanForm = () => {
@@ -42,8 +43,8 @@ export const NewPlanForm = () => {
         <form className="planForm">
             <h2 className="planform_title">New Workout Plan</h2>
             <fieldset>
-                <div className="form-group">
-                    <label htmlFor="name">Plan Name: </label>
+                <div className="plan-name">
+                    <label className="plan-name" htmlFor="name">Plan Name: </label>
                     <input type="text" id="name" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Plan Name" value={workoutPlan.name} />
                 </div>
             </fieldset>

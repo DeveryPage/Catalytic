@@ -4,6 +4,7 @@ import { PlandWorkoutList } from "./PlandWorkoutList";
 import { WorkoutPlanForm } from "../WorkoutPlanForm";
 import { DayCard } from "./Days/DaysCard";
 import { getPlandWorkoutByPlanId } from "./PlanManager";
+import './PlanCard.css'
 
 
 export const PlanCard = ({ plan, handleDeletePlan, days }) => {
@@ -31,6 +32,7 @@ export const PlanCard = ({ plan, handleDeletePlan, days }) => {
     return (
         <div className="card">
             <div className="card-content">
+                <div className="planNameandDays">
                 <h3>Name: <span className="card-plan-name">
                     {plan.name}
                 </span></h3>
@@ -45,6 +47,7 @@ export const PlanCard = ({ plan, handleDeletePlan, days }) => {
                     onClick={() => history.push(`/workoutPlans/${plan.id}`)}>
                     Add Another Workout
                 </button>
+                </div>
                 <div className="workout__card">
 
               
