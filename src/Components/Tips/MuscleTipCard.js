@@ -1,20 +1,21 @@
 import React from "react"
-import {Link, useHistory} from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import './MuscleTipCard.css'
 
-export const MuscleTipCard = ({workout}) => {
+export const MuscleTipCard = ({ workout }) => {
     const history = useHistory();
 
     return (
-        <div className= "muscle__card">
-            <div className="muscle__card_content">
-                <h3>Name: <span className="card-workout-name">
-                    {workout.name}
-                </span></h3>
+        <div className="muscle_card" >
+            <img src={workout.image} className="muscle-card-img-top" alt="..." />
+            <div className="muscle-card-body">
+                <h3 className="muscle-card-title">{workout.name}</h3>
                 <Link to={`/workouts/${workout.id}`}>
-                    <button>Details</button>
+                    <button className="details-btn" >Details</button>
                 </Link>
             </div>
         </div>
+
     )
 }
+

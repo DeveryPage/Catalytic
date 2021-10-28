@@ -1,12 +1,8 @@
-/*
-Form : has all properties of workout plan : plan id sets reps etc.
-Need fetch that gets all workouts
-*/
 import { getAllWorkouts } from './Plans/PlanManager';
 import React, { useState, useEffect} from 'react';
-import { Link, useHistory, useParams } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import { addPlandWorkout } from './Plans/PlanManager';
-import { getAllPlandWorkouts } from './Plans/PlanManager';
+
 
 
 export const WorkoutPlanForm = () => {
@@ -43,19 +39,6 @@ export const WorkoutPlanForm = () => {
         setPlandWorkout(newWorkout)
     }
 
-    // const handleClickSaveWorkout = (event) => {
-    //     event.preventDefault()
-    //     const myNewPlan = {
-    //         workoutId: plandWorkout.workoutId,
-    //         workoutPlanId: parseInt(workoutPlanId),
-    //         sets: parseInt(plandWorkout.sets),
-    //         reps: parseInt(plandWorkout.reps),
-    //         restTime: plandWorkout.restTime
-    //     }
-    //         addPlandWorkout(myNewPlan)
-    //             .then((res) => history.push(`/plandWorkouts/${res.id}`))
-
-    // }
 
 
     const handleClickSaveandClear = (event) => {
@@ -78,7 +61,7 @@ export const WorkoutPlanForm = () => {
     }
 
 
-    console.log(workouts)
+    
     return (
         <form className="workoutForm">
             <h2 className="workoutform_title">New Workout</h2>
