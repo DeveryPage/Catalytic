@@ -1,3 +1,35 @@
 .planForm {
-    background-color: blue;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    height:300px;
+    border:black 5px solid;
+    background-color: white;
+    border-radius: 20px;
+    
 }
+
+fieldset {
+    border: none;
+}
+
+
+.savePlanName_btn{
+    border-radius: 5px;
+    background-color: #38B6FF;
+    color: white;
+    border: Black 1px solid;
+    width: 120px;
+    height: 25px;
+    
+ }
+
+ input {
+    background-color: white;
+    border: 1px black solid;
+ }
+
+

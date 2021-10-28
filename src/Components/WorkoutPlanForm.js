@@ -2,6 +2,7 @@ import { getAllWorkouts } from './Plans/PlanManager';
 import React, { useState, useEffect} from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import { addPlandWorkout } from './Plans/PlanManager';
+import './WorkoutPlanForm.css'
 
 
 

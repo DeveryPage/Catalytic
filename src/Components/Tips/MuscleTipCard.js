@@ -7,7 +7,9 @@ export const MuscleTipCard = ({ workout }) => {
 
     return (
         <div className="muscle_card" >
+            
             <img src={workout.image} className="muscle-card-img-top" alt="..." />
+            
             <div className="muscle-card-body">
                 <h3 className="muscle-card-title">{workout.name}</h3>
                 <Link to={`/workouts/${workout.id}`}>

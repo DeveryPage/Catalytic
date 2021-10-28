@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useHistory, Link } from "react-router-dom";
 import { getAllDays, addPlanDay } from "../PlanManager";
 import { useParams } from "react-router";
+import './DayForm.css'
 
 //day form
 export const DaysForm = () => {
@@ -60,6 +61,7 @@ export const DaysForm = () => {
                     </select>
                 </div>
                 </fieldset>
+                <div className="day-btns">
                 <button
                 className="save_day_btn"
                 onClick={handleClickSaveandClear}>
@@ -70,6 +72,7 @@ export const DaysForm = () => {
                 onClick={() => history.push(`/`)}>
                     Complete Plan
                 </button>
+                </div>
             </form>
         )
 

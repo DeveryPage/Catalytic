@@ -221,83 +221,43 @@
   "plandWorkouts": [
     {
       "workoutId": 1,
-      "workoutPlanId": 3,
-      "sets": 4,
-      "reps": 18,
-      "restTime": "1 minute",
-      "id": 3
-    },
-    {
-      "id": 4,
+      "workoutPlanId": 8,
       "sets": 5,
-      "reps": 2,
-      "restTime": "1 minuter",
-      "workoutId": 6,
-      "workoutPlanId": 3
-    },
-    {
-      "workoutId": 5,
-      "workoutPlanId": 3,
-      "sets": 1,
-      "reps": 0,
-      "restTime": "30",
-      "id": 5
+      "reps": 5,
+      "restTime": "1 minute",
+      "id": 1
     },
     {
       "workoutId": 1,
-      "workoutPlanId": 4,
+      "workoutPlanId": 1,
       "sets": 5,
-      "reps": 12,
-      "restTime": "1 minute",
-      "id": 6
+      "reps": 5,
+      "restTime": "5",
+      "id": 2
     },
     {
-      "workoutId": 2,
-      "workoutPlanId": 4,
-      "sets": 5,
-      "reps": 12,
-      "restTime": "1 minute",
-      "id": 7
-    },
-    {
-      "workoutId": 3,
-      "workoutPlanId": 4,
-      "sets": 4,
-      "reps": 10,
-      "restTime": "1 minute",
-      "id": 8
-    },
-    {
-      "id": 9,
-      "sets": 4,
-      "reps": 15,
-      "restTime": "1 minute",
       "workoutId": 4,
-      "workoutPlanId": 4
+      "workoutPlanId": 1,
+      "sets": 5,
+      "reps": 5,
+      "restTime": "5",
+      "id": 3
     },
     {
-      "workoutId": 8,
-      "workoutPlanId": 4,
-      "sets": 4,
-      "reps": 6,
-      "restTime": "1 minute",
-      "id": 10
+      "workoutId": 5,
+      "workoutPlanId": 1,
+      "sets": 5,
+      "reps": 5,
+      "restTime": "5",
+      "id": 4
     },
     {
       "workoutId": 3,
-      "workoutPlanId": 4,
-      "sets": 5,
-      "reps": 800,
-      "restTime": "1 minute",
-      "id": 11
-    },
-    {
-      "workoutId": 9,
-      "workoutPlanId": 6,
-      "sets": 5,
-      "reps": 555,
-      "restTime": "1 minute",
-      "id": 14
+      "workoutPlanId": 2,
+      "sets": 444,
+      "reps": 444,
+      "restTime": "444",
+      "id": 5
     }
   ],
   "muscleGroups": [
@@ -316,19 +276,14 @@
   ],
   "workoutPlans": [
     {
-      "userId": 6,
-      "name": "Green and mena",
-      "id": 3
+      "userId": 1,
+      "name": "5",
+      "id": 1
     },
     {
       "userId": 1,
-      "name": "Chest",
-      "id": 4
-    },
-    {
-      "userId": 7,
-      "name": "Brenda's Plan",
-      "id": 6
+      "name": "444",
+      "id": 2
     }
   ],
   "days": [
@@ -364,33 +319,43 @@
   "planDays": [
     {
       "dayId": 1,
-      "workoutPlanId": 3,
-      "id": 3
+      "workoutPlanId": 8,
+      "id": 1
     },
     {
-      "dayId": 4,
-      "workoutPlanId": 3,
-      "id": 4
-    },
-    {
-      "dayId": 7,
-      "workoutPlanId": 3,
-      "id": 5
-    },
-    {
-      "dayId": 1,
-      "workoutPlanId": 4,
-      "id": 6
+      "dayId": 3,
+      "workoutPlanId": 8,
+      "id": 2
     },
     {
       "dayId": 5,
-      "workoutPlanId": 4,
-      "id": 7
+      "workoutPlanId": 8,
+      "id": 3
     },
     {
       "dayId": 1,
-      "workoutPlanId": 6,
-      "id": 11
+      "workoutPlanId": 1,
+      "id": 4
+    },
+    {
+      "dayId": 3,
+      "workoutPlanId": 1,
+      "id": 5
+    },
+    {
+      "dayId": 4,
+      "workoutPlanId": 1,
+      "id": 6
+    },
+    {
+      "dayId": 3,
+      "workoutPlanId": 2,
+      "id": 7
+    },
+    {
+      "dayId": 7,
+      "workoutPlanId": 2,
+      "id": 8
     }
   ]
 }
