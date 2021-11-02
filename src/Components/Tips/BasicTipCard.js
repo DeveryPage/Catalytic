@@ -20,6 +20,7 @@ export const BasicTipCard = () => {
                             <li>Warming up by stretching is an option... No, not the static stretching you're thinking of, rather something called active stretching.<a className="clickhere" href="https://www.wise-geek.com/what-is-active-stretching.htm"> See Definition Here</a></li>
                             <li>Warming up by performing some exercises with light weight at the specific muscles you'll be working out is also a strongly encouraged workout warm up. </li>
                             <li>Warming up through light cardio is, as well, a great way to get your blood pumping and reduce risk of injury once the real workout begins, all it takes is 5 to 10 minutes of jogging, jump roping, etc and then you are ready.</li>
+                            <li>Don't forget to queue some music for your workout, studies show it's good for focus and can improve general performance when listening to some tunes.</li>
                         </ul>
                     </div>
                     <br>
