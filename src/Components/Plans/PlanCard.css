@@ -1,5 +1,7 @@
 .planNameandDays {
     background-color: white;
+    margin-left: 50px;
+    padding: 30px
 }
 
 .card-content {
@@ -11,7 +13,12 @@
     background-color: white;
     border: 5px black solid;
     border-radius: 10px;
+    margin-left: 50px;
 
+}
+
+.card-plan-name {
+    border-bottom: black 2px solid;
 }
 
 .planNameandDays{
