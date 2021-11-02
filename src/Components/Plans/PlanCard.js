@@ -30,38 +30,44 @@ export const PlanCard = ({ plan, handleDeletePlan, days }) => {
 
 
     return (
-        <div className="card">
+        <div className="home-card">
             <div className="card-content">
                 <div className="planNameandDays">
-                <h3>Name: <span className="card-plan-name">
+                <h3> <span className="card-plan-name">
                     {plan.name}
                 </span></h3>
                 {/* maps through days that are chosen */}
                 {planDays.map(day=> <DayCard day={day}/>)}
                 <button
+                    className="plancardbutton"
                     type="button"
                     onClick={() => handleDeletePlan(plan.id)}>
-                    Delete
+                    Delete Plan
                 </button>
-                <button type="button"
+                <button 
+                    className="plancardaddbutton"
+                    type="button"
                     onClick={() => history.push(`/workoutPlans/${plan.id}`)}>
                     Add Another Workout
                 </button>
                 </div>
+                    </div>
                 <div className="workout__card">
 
               
                     {
                             workouts.map(plandWorkout => {
                             return <div key={plandWorkout.id} className="workout__card_content">
-                                
-                                <h3>Name: <span className="workout__name">
+                                <div className="card-stuff">
+                                <h3> <span className="workout__name">
                                     {plandWorkout.workout.name}
                                 </span></h3>
                                 <h4>Sets: {plandWorkout.sets}</h4>
                                 <h4>Reps: {plandWorkout.reps}</h4>
                                 <h4>Rest Time: {plandWorkout.restTime}</h4>
+                                </div>
                                 <button
+                                    className="card-edit-button"
                                     type="button"
                                     onClick={() => history.push(`/plandWorkouts/${plandWorkout.id}/edit`)}>
                                     Edit
@@ -74,6 +80,5 @@ export const PlanCard = ({ plan, handleDeletePlan, days }) => {
 
                 </div>
             </div>
-        </div>
     )
 }

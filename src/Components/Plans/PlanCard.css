@@ -1,13 +1,69 @@
 .planNameandDays {
     background-color: white;
+}
+
+.card-content {
     display: flex;
-    width: 25%;
-    flex-direction: column;
-    align-items: baseline;
+    border: 5px black solid
 }
 
 .workout__card_content{
-    display:flex;
     background-color: white;
+    border: 5px black solid;
+    border-radius: 10px;
+
+}
+
+.planNameandDays{
+    border-radius: 5px;
+}
+
+.card-edit-button{
+    border-radius: 5px;
+    background-color: #38B6FF;
+    color: white;
+    border: Black;
+    width: 100px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.plancardbutton{
+    display: flex;
+    border-radius: 5px;
+    background-color: #38B6FF;
+    color: white;
+    border: Black;
+    width: 120px;
+    height: 25px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .plancardaddbutton{
+    
+    border-radius: 5px;
+    background-color: #38B6FF;
+    color: white;
+    border: Black;
+    width: 120px;
+    height: 40px
+  }
+
+.workout__card {
+    display: flex;
+}
+
+.card-stuff {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 30px;
+
+}
+
+.home-card {
+    display: flex;
+    width: 50%;
 }

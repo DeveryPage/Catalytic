@@ -27,7 +27,7 @@ export const MuscleTipDetail = () => {
     }, [workoutId]);
 
     return (
-        <section className="workout">
+        <section className="workout-detail">
             <h3 className="workout__Name">{workout.name}</h3>
             <h5 className="workout__description">{workout.description}</h5>
             <h5 className="workout__tips">{workout.tips}</h5>
