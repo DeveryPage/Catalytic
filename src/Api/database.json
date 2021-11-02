@@ -225,30 +225,6 @@
   ],
   "plandWorkouts": [
     {
-      "workoutId": 1,
-      "workoutPlanId": 1,
-      "sets": 5,
-      "reps": 5,
-      "restTime": "5",
-      "id": 2
-    },
-    {
-      "workoutId": 4,
-      "workoutPlanId": 1,
-      "sets": 5,
-      "reps": 5,
-      "restTime": "5",
-      "id": 3
-    },
-    {
-      "workoutId": 5,
-      "workoutPlanId": 1,
-      "sets": 5,
-      "reps": 5,
-      "restTime": "5",
-      "id": 4
-    },
-    {
       "id": 5,
       "sets": 5,
       "reps": 999,
@@ -273,36 +249,60 @@
       "id": 7
     },
     {
-      "workoutId": 1,
-      "workoutPlanId": 4,
+      "workoutId": 14,
+      "workoutPlanId": 5,
       "sets": 5,
-      "reps": 12,
-      "restTime": "1 minute",
-      "id": 11
+      "reps": 4,
+      "restTime": "3 minutes",
+      "id": 15
     },
     {
-      "workoutId": 5,
-      "workoutPlanId": 4,
-      "sets": 5,
-      "reps": 8,
-      "restTime": "1 minute",
-      "id": 12
-    },
-    {
-      "workoutId": 17,
-      "workoutPlanId": 4,
-      "sets": 5,
-      "reps": 15,
-      "restTime": "1 minute",
-      "id": 13
-    },
-    {
-      "workoutId": 18,
-      "workoutPlanId": 4,
+      "workoutId": 15,
+      "workoutPlanId": 5,
       "sets": 4,
       "reps": 8,
       "restTime": "1 minute",
-      "id": 14
+      "id": 16
+    },
+    {
+      "workoutId": 13,
+      "workoutPlanId": 5,
+      "sets": 4,
+      "reps": 5,
+      "restTime": "1 minute",
+      "id": 17
+    },
+    {
+      "workoutId": 1,
+      "workoutPlanId": 6,
+      "sets": 5,
+      "reps": 15,
+      "restTime": "1 minute",
+      "id": 18
+    },
+    {
+      "workoutId": 5,
+      "workoutPlanId": 6,
+      "sets": 4,
+      "reps": 12,
+      "restTime": "2 minutes",
+      "id": 19
+    },
+    {
+      "workoutId": 4,
+      "workoutPlanId": 6,
+      "sets": 5,
+      "reps": 15,
+      "restTime": "1 minute",
+      "id": 20
+    },
+    {
+      "workoutId": 2,
+      "workoutPlanId": 6,
+      "sets": 3,
+      "reps": 20,
+      "restTime": "2 minutes",
+      "id": 21
     }
   ],
   "muscleGroups": [
@@ -321,19 +321,19 @@
   ],
   "workoutPlans": [
     {
-      "userId": 1,
-      "name": "5",
-      "id": 1
-    },
-    {
       "userId": 8,
       "name": "Morgans muscles",
       "id": 2
     },
     {
       "userId": 1,
-      "name": "Chest and Biceps",
-      "id": 4
+      "name": "Back and Abs",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "name": "Chest",
+      "id": 6
     }
   ],
   "days": [
@@ -369,21 +369,6 @@
   "planDays": [
     {
       "dayId": 1,
-      "workoutPlanId": 1,
-      "id": 4
-    },
-    {
-      "dayId": 3,
-      "workoutPlanId": 1,
-      "id": 5
-    },
-    {
-      "dayId": 4,
-      "workoutPlanId": 1,
-      "id": 6
-    },
-    {
-      "dayId": 1,
       "workoutPlanId": 2,
       "id": 7
     },
@@ -399,23 +384,33 @@
     },
     {
       "dayId": 1,
-      "workoutPlanId": 4,
-      "id": 13
-    },
-    {
-      "dayId": 3,
-      "workoutPlanId": 4,
-      "id": 14
+      "workoutPlanId": 5,
+      "id": 17
     },
     {
       "dayId": 5,
-      "workoutPlanId": 4,
-      "id": 15
+      "workoutPlanId": 5,
+      "id": 18
     },
     {
       "dayId": 7,
-      "workoutPlanId": 4,
-      "id": 16
+      "workoutPlanId": 5,
+      "id": 19
+    },
+    {
+      "dayId": 1,
+      "workoutPlanId": 6,
+      "id": 20
+    },
+    {
+      "dayId": 4,
+      "workoutPlanId": 6,
+      "id": 21
+    },
+    {
+      "dayId": 7,
+      "workoutPlanId": 6,
+      "id": 22
     }
   ]
 }
