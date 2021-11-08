@@ -1,0 +1,10 @@
+.workout-detail {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.workout-detail img{
+    width: 50%;
+}

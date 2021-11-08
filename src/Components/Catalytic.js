@@ -4,6 +4,7 @@ import { ApplicationViews } from "./ApplicationViews"
 import { Route, Link } from "react-router-dom"
 import { LoginForm } from "./Auth/LoginForm"
 import { RegisterForm } from "./Auth/RegisterForm"
+import './Catalytic.css'
 
 
 export const Catalytic = () => {
@@ -30,7 +31,7 @@ export const Catalytic = () => {
                         </>
                     )
                 } else {
-                    return <h3 className="catalytic--landing">Weclome to Catalytic! Click <Link to="/login">HERE</Link> to log in.</h3>;
+                    return <h3 className="catalytic--landing">Weclome to Catalytic! Click <Link to="/login" className="here-link">HERE</Link> to log in.</h3>;
                 }
             }}
         />
