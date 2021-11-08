@@ -57,7 +57,7 @@ export const LoginForm = ({setAuthUser}) => {
                 </form>
             </section>
             <section className="link--register">
-                <Link to="/register">Not a member yet?</Link>
+                <Link to="/register" className="link-color">Not a member yet?</Link>
             </section>
         </main>
     )

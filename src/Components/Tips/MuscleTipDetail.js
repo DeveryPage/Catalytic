@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { getWorkoutById } from "../Plans/PlanManager";
 import {useParams} from "react-router-dom"
+import './MuscleTipDetail.css'
 
 export const MuscleTipDetail = () => {
     const [workout, setWorkout] = useState({
@@ -34,9 +35,9 @@ export const MuscleTipDetail = () => {
             <div className="workout__video">
                 <img src={workout.video} /> 
             </div>
-            <div className="workout__image">
+            {/* <div className="workout__image">
                 <img src={workout.image} />
-            </div>
+            </div> */}
         </section>
     )
 }

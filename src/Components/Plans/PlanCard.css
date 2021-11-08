@@ -14,6 +14,7 @@
     border: 5px black solid;
     border-radius: 10px;
     margin-left: 50px;
+    width: 175px;
 
 }
 
@@ -73,4 +74,9 @@
 .home-card {
     display: flex;
     width: 50%;
+}
+
+.card-edit{
+    display: flex;
+    justify-content: space-around;
 }

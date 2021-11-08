@@ -66,12 +66,14 @@ export const PlanCard = ({ plan, handleDeletePlan, days }) => {
                                 <h4>Reps: {plandWorkout.reps}</h4>
                                 <h4>Rest Time: {plandWorkout.restTime}</h4>
                                 </div>
+                                <div className="card-edit">
                                 <button
                                     className="card-edit-button"
                                     type="button"
                                     onClick={() => history.push(`/plandWorkouts/${plandWorkout.id}/edit`)}>
                                     Edit
                                 </button>
+                                </div>
                             </div>
                         })
 
